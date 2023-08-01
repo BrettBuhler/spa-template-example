@@ -42,6 +42,7 @@ import jobHuntImg from './assets/jh.png'
 import flashStudyImg from "./assets/fs7.png"
 import openingMasterImg from './assets/om1.png'
 import myGptImg from "./assets/mgpt.png"
+import spaTemplateImg from "./assets/spat.png"
 import codeWarsImg from './assets/cw.png'
 
 const App = () => {
@@ -89,7 +90,7 @@ const App = () => {
         [myGptImg, "My GPT", "My GPT combines the user-friendly interface of Chat GPT with the power of Open AI's virtual sandbox.", ["Front End: React.js TypeScript / JavaScript TailwindCSS HTML CSS", "Back End: Node.js Express.js PostgresSQL", "Cloud Services: Google Cloud Platform (Hosting & CI/CD Pipeline)"], [["Site", "https://my-gpt-393516.uc.r.appspot.com/"],["Code", "https://github.com/BrettBuhler/my-gpt"], ["Demo", "https://www.youtube.com/watch?v=YXONKSt7b8g"]]],
         [jobHuntImg, "Job Hunt", "Job Hunt empowers users by writing AI-powered custom cover letters in seconds.", ["Front End: React TypeScript / JavaScript HTML CSS","Back End: Node.js Express.js MongoDB","Authentication: JWT local strategy & OAuth", "Cloud Services: Google Cloud Platform (Hosting & CI/CD Pipeline)"], [["Site", "https://job-hunt-385520.uc.r.appspot.com/"],["Code", "https://github.com/BrettBuhler/job-hunt"], ["Demo", "https://www.youtube.com/watch?v=5n1gPCFy8J8"]]],
         [openingMasterImg, "Opening Master", "Perfect your Chess Openings with Opening Master! Save your lines and practice unlimited variations.", ["Front End: React JavaScript HTML CSS MaterialUI", "Back End: Node.js Express.js MongoDB", "Authentication: OAuth"], [["Site", "https://brettbuhler.github.io/opening/"],["Code", "https://github.com/BrettBuhler/opening"], ["Demo", "https://www.youtube.com/watch?v=k055ql_oXhA"]]],
-        [googleCloudIcon, "SPA Template", "", [""], []],
+        [spaTemplateImg, "SPA Template", "SPA Template by Brett Buhler – Your low-code solution for a stunning portfolio website.", ["Introducing SPA Template: Your fully responsive portfolio site, showcasing your web development skills with ease.", "Customize every feature effortlessly through the simple App.tsx folder, guided by clear instructions in the comments.", "Unleash your creativity and leave a lasting impression with SPA Template."], [["Site", ""],["Code", ""], ["Demo", ""]]],
         [codeWarsImg, "Code Wars", "CodeWars allows users to improve their programming skills by solving algorithmic problems.", ['Rank: 2 kyu (Top 0.6% of users)', "Languages Studied: JavaScript, TypeScript, Python, C#, C++, Go, SQL"], [["Profile","https://www.codewars.com/users/BrettBuhler/"],["Code", "https://github.com/BrettBuhler/Code-Wars"], ["Demo", "https://www.youtube.com/watch?v=ZJcchjapw4g"]]]
        
     ]
