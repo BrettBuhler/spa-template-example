@@ -53,12 +53,12 @@ const TopBar:React.FC<TopBarProps> = ({title = "PlaceHolder", buttons = [], logo
     }, [])
 
     useEffect(()=> {
-        if (screenWidth < 760) {
+        if (screenWidth < 600) {
             setIsMobile1(true)
         } else {
             setIsMobile1(false)
         }
-        if (screenWidth < 500) {
+        if (screenWidth < 526) {
             setIsMobile2(true)
         } else {
             setIsMobile2(false)

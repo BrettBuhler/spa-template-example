@@ -21,7 +21,7 @@ const Hero: React.FC<HeroProps> = ({ title, subTitle, background }) => {
     },[])
 
     return (
-        <section id="home" className="h-screen flex items-center justify-center" style={{ backgroundImage: `url(${background})`, backgroundSize: "cover", backgroundColor: 'black'}}>
+        <section id="home" className="h-screen flex items-center justify-center" style={{ backgroundImage: `url(${background})`, backgroundSize: "cover", backgroundColor: 'black', backgroundPosition: "center"}}>
             <div className="top-0 left-0 w-full h-full bg-black absolute opacity-50"></div>
             <fieldset style={{transform: "rotateX(180deg)"}}className="rounded-br-2xl rounded-tl-2xl border-8 border-white bg-transparent p-4 flex justify-center items-center">
                 <div className="bg-transparent p-2 mb-4">

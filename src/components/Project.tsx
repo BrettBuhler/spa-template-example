@@ -52,7 +52,7 @@ const Project:React.FC<ProjectProps> = ({ img, title, description, dark, project
     }
 
     return (
-        <div className={`border-4 p-4 shadow-md relative ${isHovered ? "" : ""} ${dark ? "bg-dark-theme-mid-light border-white shadow-black" : "bg-light-theme-mid-light border-black shadow-black"}`}style={{height: "600px", maxHeight: "75vh", width: "500px", maxWidth: screenWidth > 699 ? "40vw" : "60vw", minWidth:'290px', backgroundImage: `url(${img})`, backgroundPosition: "center", backgroundSize: "cover"}} onMouseEnter={handleEnter} onMouseLeave={handleLeave}>
+        <div className={`border-4 p-4 shadow-md relative ${isHovered ? "" : ""} ${dark ? "bg-dark-theme-mid-light border-white shadow-black" : "bg-light-theme-mid-light border-black shadow-black"}`}style={{height: "600px", maxHeight: "75vh", width: "500px", maxWidth: screenWidth > 699 ? "40vw" : "60vw", minWidth:'290px', backgroundImage: `url(${img})`, backgroundSize: "100% 100%", backgroundRepeat: "no-repeat"}} onMouseEnter={handleEnter} onMouseLeave={handleLeave}>
             <div className={`overflow-hidden ${isBackDrop ? dark ? 'bg-black' : 'bg-white' : '' } absolute top-0 left-0 h-full w-full bg-opacity-95`} style={{transition: "background 0.5s ease-in-out"}}>
                 {isBackDrop && (
                     <div className={`pt-20 flex flex-col justify-end text-lg font-semibold ${dark ? "text-gray-100" : "text-gray-950"}`}>

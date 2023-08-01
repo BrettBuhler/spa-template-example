@@ -7,12 +7,13 @@ import "aos/dist/aos.css"
 
 //components
 import TopBar from "./components/TopBar"
-import logo from "./assets/react.svg"
+import logo from "./assets/briefcase-64.png"
 import Hero from "./components/Hero"
 import About from "./components/About"
 import Projects from "./components/Projects"
 import PageInBuffer from "./components/Buffers/PageInBuffer"
 import Footer from "./components/Footer"
+import SideBar from "./components/SideBar"
 
 //Add an image to the assets folder then change import to your hero background
 import background from "./assets/night-sky-glows-with-iridescent-deep-space-generative-ai.jpg"
@@ -37,11 +38,11 @@ import expressIcon from './assets/express-js-48.png'
 import linkedinIcon from './assets/linked-in-48.png'
 
 //background images for projects
-import teamProjectImg from './assets/Team-project.jpg'
-import aiImage1 from './assets/ai_img_1.png'
-import flashStudyImg from './assets/flashstudy1.png'
-import aiImage2 from './assets/ai_img_2.png'
-import SideBar from "./components/SideBar"
+import jobHuntImg from './assets/jh.png'
+import flashStudyImg from "./assets/fs7.png"
+import openingMasterImg from './assets/om1.png'
+import myGptImg from "./assets/mgpt.png"
+import codeWarsImg from './assets/cw.png'
 
 const App = () => {
     //Dark's initial state determines whether the default app theme is dark or light
@@ -62,7 +63,7 @@ const App = () => {
      */
     const aboutText = [
         "Welcome to my portfolio website! I'm Brett Buhler, a results-driven Full Stack Web Developer with a passion for AI and a creative flair for designing and implementing front and back-end web applications. I am enthusiastic about finding innovative solutions to real-world problems and strive to create web experiences that are not only visually appealing but also highly functional and user-friendly.",
-        ""
+        "My passion for formal logic led me to transition from operations management to software development. Embracing the world of programming, I honed my skills in full-stack web development while integrating AI to create intelligent user experiences. This portfolio reflects my progression, showcasing projects that merge functionality with visual appeal."
     ]
 
     /** Skills to fill in the aboutSKills section index 0 is an image, index 1 is the display name */
@@ -81,16 +82,16 @@ const App = () => {
         [googleCloudIcon, "Google Cloud"],
 
     ]
-    /** DummyLink links / text for the base example. Remove this from your own projects*/
-    const dummyLink = "https://github.com/BrettBuhler/spa-template"
-    const loremIpsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    
+
     /** Project items to go in the Projects component [Image, Title, Description, [Innter text, eact new element is a line break], [[button display text, button link]]] */
     const projectItems: [string, string, string, string[], string[][]][] = [
-        [teamProjectImg, 'Example 1', 'This is some description text. Keep it short!',["This example has one button", "this is some project innter text","this is a new line","on small screens this text might be hidden"], [["one", dummyLink]]],
-        [aiImage1, 'Exampe 2', 'No limits to creativity. Add your own projects and showcase your brilliance here!',[loremIpsum],[["one", dummyLink], ["two", dummyLink]]],
-        [aiImage2, "Example 3", "SPA template gives you the skelleton to craft your personal portfolio. Use what you like.",[loremIpsum],[["one", dummyLink],["two", dummyLink],["three", dummyLink]]],
-        [flashStudyImg, "Flash Study", "AI powered Full Stack Web App designed to automate the study process.",["Front End: React.js TypeScript / JavaScript HTML CSS", "Back End: Node.js Express.js MongoDB", "Payments: Stripe","Authentication: Passport.js", "Cloud Services: Google Cloud Platform"],[["Site","https://flash-study.uc.r.appspot.com/"],["Code", "https://github.com/BrettBuhler/flash-study"],["Demo", "https://www.youtube.com/watch?v=Z50n7F_hAdc"]]]
+        [flashStudyImg, "Flash Study", "Flash Study is an AI powered Full Stack Web App designed to automate the study process.",["Front End: React.js TypeScript / JavaScript HTML CSS", "Back End: Node.js Express.js MongoDB", "Payments: Stripe","Authentication: Passport.js", "Cloud Services: Google Cloud Platform"],[["Site","https://flash-study.uc.r.appspot.com/"],["Code", "https://github.com/BrettBuhler/flash-study"],["Demo", "https://www.youtube.com/watch?v=Z50n7F_hAdc"]]],
+        [myGptImg, "My GPT", "My GPT combines the user-friendly interface of Chat GPT with the power of Open AI's virtual sandbox.", ["Front End: React.js TypeScript / JavaScript TailwindCSS HTML CSS", "Back End: Node.js Express.js PostgresSQL", "Cloud Services: Google Cloud Platform (Hosting & CI/CD Pipeline)"], [["Site", "https://my-gpt-393516.uc.r.appspot.com/"],["Code", "https://github.com/BrettBuhler/my-gpt"], ["Demo", "https://www.youtube.com/watch?v=YXONKSt7b8g"]]],
+        [jobHuntImg, "Job Hunt", "Job Hunt empowers users by writing AI-powered custom cover letters in seconds.", ["Front End: React TypeScript / JavaScript HTML CSS","Back End: Node.js Express.js MongoDB","Authentication: JWT local strategy & OAuth", "Cloud Services: Google Cloud Platform (Hosting & CI/CD Pipeline)"], [["Site", "https://job-hunt-385520.uc.r.appspot.com/"],["Code", "https://github.com/BrettBuhler/job-hunt"], ["Demo", "https://www.youtube.com/watch?v=5n1gPCFy8J8"]]],
+        [openingMasterImg, "Opening Master", "Perfect your Chess Openings with Opening Master! Save your lines and practice unlimited variations.", ["Front End: React JavaScript HTML CSS MaterialUI", "Back End: Node.js Express.js MongoDB", "Authentication: OAuth"], [["Site", "https://brettbuhler.github.io/opening/"],["Code", "https://github.com/BrettBuhler/opening"], ["Demo", "https://www.youtube.com/watch?v=k055ql_oXhA"]]],
+        [googleCloudIcon, "SPA Template", "", [""], []],
+        [codeWarsImg, "Code Wars", "CodeWars allows users to improve their programming skills by solving algorithmic problems.", ['Rank: 2 kyu (Top 0.6% of users)', "Languages Studied: JavaScript, TypeScript, Python, C#, C++, Go, SQL"], [["Profile","https://www.codewars.com/users/BrettBuhler/"],["Code", "https://github.com/BrettBuhler/Code-Wars"], ["Demo", "https://www.youtube.com/watch?v=ZJcchjapw4g"]]]
+       
     ]
 
     //icons for topbar (set Icons as an empty array to remove icons from top bar. Index 0 is the an image, Index 1 is the link)
