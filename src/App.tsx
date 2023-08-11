@@ -18,7 +18,7 @@ import SideBar from "./components/SideBar"
 import background from "./assets/night-sky-glows-with-iridescent-deep-space-generative-ai.jpg"
 
 //Top Bar Logo
-import logo from "./assets/user-images_9977103.png"
+import logo from "./assets/find-user-male-skin-type-7.png"
 
 //Add icons for skills display
 import htmlIcon from './assets/html-48.png'
@@ -45,6 +45,7 @@ import openingMasterImg from './assets/om1.png'
 import myGptImg from "./assets/mgpt.png"
 import spaTemplateImg from "./assets/spat.png"
 import codeWarsImg from './assets/cw.png'
+import dalledashImg from './assets/dalledash2.png'
 
 const App = () => {
     //Dark's initial state determines whether the default app theme is dark or light
@@ -87,6 +88,7 @@ const App = () => {
 
     /** Project items to go in the Projects component [Image, Title, Description, [Innter text, eact new element is a line break], [[button display text, button link]]] */
     const projectItems: [string, string, string, string[], string[][]][] = [
+        [dalledashImg, "Dall-E Dash", "Unleash Creativity with Dall-E Dash: Instant AI Artistry in Seconds, Fueled by Meta Prompts!", ["Front End: React.js TypeScript / JavaScript HTML CSS", "Back End: Node.js Express.js PostgreSQL RESTful API", "Payments: Stripe Checkout", "Authentication: Passport.js", "Cloud Services: Google Cloud Platform & Supabase"], [["Site","https://dalle-dash.uc.r.appspot.com/"], ["Code", "https://github.com/BrettBuhler/dalle-dash",], ["Demo", "https://youtu.be/fv11ixpnmhU"]]],
         [flashStudyImg, "Flash Study", "Flash Study is an AI powered Full Stack Web App designed to automate the study process.",["Front End: React.js TypeScript / JavaScript HTML CSS", "Back End: Node.js Express.js RESTful API MongoDB", "Payments: Stripe","Authentication: Passport.js", "Cloud Services: Google Cloud Platform"],[["Site","https://flash-study.uc.r.appspot.com/"],["Code", "https://github.com/BrettBuhler/flash-study"],["Demo", "https://www.youtube.com/watch?v=Z50n7F_hAdc"]]],
         [myGptImg, "My GPT", "My GPT combines the user-friendly interface of Chat GPT with the power of Open AI's virtual sandbox.", ["Front End: React.js TypeScript / JavaScript TailwindCSS HTML CSS", "Back End: Node.js Express.js RESTful API PostgresSQL", "Cloud Services: Google Cloud Platform (Hosting & CI/CD Pipeline)"], [["Site", "https://my-gpt-393516.uc.r.appspot.com/"],["Code", "https://github.com/BrettBuhler/my-gpt"], ["Demo", "https://www.youtube.com/watch?v=YXONKSt7b8g"]]],
         [jobHuntImg, "Job Hunt", "Job Hunt empowers users by writing AI-powered custom cover letters in seconds.", ["Front End: React TypeScript / JavaScript HTML CSS","Back End: Node.js Express.js RESTful API MongoDB","Authentication: JWT local strategy & OAuth", "Cloud Services: Google Cloud Platform (Hosting & CI/CD Pipeline)"], [["Site", "https://job-hunt-385520.uc.r.appspot.com/"],["Code", "https://github.com/BrettBuhler/job-hunt"], ["Demo", "https://www.youtube.com/watch?v=5n1gPCFy8J8"]]],
